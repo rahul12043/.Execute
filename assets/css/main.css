@@ -4346,6 +4346,7 @@ textarea.form-control-lg {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
+  border-radius: 25px;
 }
 
 .card-title {
@@ -4439,6 +4440,7 @@ textarea.form-control-lg {
   .card-group {
     display: flex;
     flex-flow: row wrap;
+    border-radius: 25px;
   }
   .card-group > .card {
     flex: 1 0 0%;
