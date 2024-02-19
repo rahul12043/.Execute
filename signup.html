@@ -4,12 +4,19 @@
 <link rel="stylesheet" href="./assets/css/main.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="fetchinfo.js"></script>
 
 <div class="pb-2 mt-2 mb-4 border-bottom">
     <h3 style="padding-left:20px">Sign up</h3>
   </div>
-  <form id="signup-form" method="POST">
+  <form id="signup-form" method="POST" action="http://localhost:3000/createUser" enctype="application/json">
     <input type="hidden" name="_csrf"/>
+    <div class="form-group row mb-3">
+      <label class="col-md-3 col-form-label font-weight-bold text-right" for="name">Name</label>
+      <div class="col-md-7">
+        <input class="form-control" type="name" name="name" id="name" placeholder="name" autofocus="autofocus"required="required"/>
+      </div>
+    </div>
     <div class="form-group row mb-3">
       <label class="col-md-3 col-form-label font-weight-bold text-right" for="email">Email</label>
       <div class="col-md-7">
@@ -29,6 +36,6 @@
       </div>
     </div>
     <div class="form-group offset-sm-3 col-md-7 pl-2">
-      <button class="btn btn-success" type="submit"><i class="fas fa-user-plus fa-sm iconpadding"></i>Signup</button>
+      <button class="btn btn-success" type="submit" onsubmit="handleFormSubmit(event)"><i class="fas fa-user-plus fa-sm iconpadding"></i>Signup</button>
     </div>
   </form>
