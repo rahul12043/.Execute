@@ -598,7 +598,7 @@ body {
 
 .video {
   padding-block: 0;
-  margin-block-end: -250px;
+  /* margin-block-end: -250px; */
 }
 
 .card {
@@ -613,8 +613,8 @@ body {
 }
 
 .video-card {
-  width: 30%;
-  border-radius: 10px;
+  width: 100%;
+  border-radius: 7px;
   margin: 10px;
   position: relative;
   overflow: hidden;
@@ -788,7 +788,7 @@ body {
   gap: 50px;
 }
 
-.footer .logo { color: var(--white); }
+.footer .logo { color: var(--black_10); }
 
 .footer-brand-text { margin-block: 25px; }
 

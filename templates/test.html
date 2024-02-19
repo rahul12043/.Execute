@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="gallery">
+    <div class="video">
+        <a href="assets\videos\video.mp4" data-lightbox="videos" data-title="Video 1">
+            <img src="thumbnail1.jpg" alt="Video 1">
+        </a>
+        <p>Video 1</p>
+    </div>
+    
+    <div class="video">
+        <a href="video2.mp4" data-lightbox="videos" data-title="Video 2">
+            <img src="thumbnail2.jpg" alt="Video 2">
+        </a>
+        <p>Video 2</p>
+    </div>
+
+    <!-- Add more video entries as needed -->
+
+</div>
+
+<script src="lightbox.min.js"></script>
+<script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    });
+</script>
+
+</body>
+</html>

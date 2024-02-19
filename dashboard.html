@@ -1,92 +1,32 @@
-      
-      <!--To-Do List-->
-
-
-      <section class="vh-100" style="background-color: #e2d5de;">
-        <div class="container py-5 h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col col-xl-10">
-      
-              <div class="card" style="border-radius: 15px;">
-                <div class="card-body p-5">
-      
-                  <h6 class="mb-3">Awesome Todo List</h6>
-      
-                  <form class="d-flex justify-content-center align-items-center mb-4">
-                    <div class="form-outline flex-fill">
-                      <input type="text" id="form3" class="form-control form-control-lg" />
-                      <label class="form-label" for="form3">What do you need to do today?</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-lg ms-2">Add</button>
-                  </form>
-      
-                  <ul class="list-group mb-0">
-                    <li
-                      class="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
-                      <div class="d-flex align-items-center">
-                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
-                        Cras justo odio
-                      </div>
-                      <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
-                        <i class="fas fa-times text-primary"></i>
-                      </a>
-                    </li>
-                    <li
-                      class="list-group-item d-flex d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
-                      <div class="d-flex align-items-center">
-                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
-                        <s>Dapibus ac facilisis in</s>
-                      </div>
-                      <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
-                        <i class="fas fa-times text-primary"></i>
-                      </a>
-                    </li>
-                    <li
-                      class="list-group-item d-flex d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
-                      <div class="d-flex align-items-center">
-                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
-                        Morbi leo risus
-                      </div>
-                      <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
-                        <i class="fas fa-times text-primary"></i>
-                      </a>
-                    </li>
-                    <li
-                      class="list-group-item d-flex d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
-                      <div class="d-flex align-items-center">
-                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
-                        Porta ac consectetur ac
-                      </div>
-                      <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
-                        <i class="fas fa-times text-primary"></i>
-                      </a>
-                    </li>
-                    <li
-                      class="list-group-item d-flex d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-0">
-                      <div class="d-flex align-items-center">
-                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
-                        Vestibulum at eros
-                      </div>
-                      <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
-                        <i class="fas fa-times text-primary"></i>
-                      </a>
-                    </li>
-                    <li
-                      class="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
-                      <div class="d-flex align-items-center">
-                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
-                        Morbi leo risus
-                      </div>
-                      <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
-                        <i class="fas fa-times text-primary"></i>
-                      </a>
-                    </li>
-                  </ul>
-      
-                </div>
-              </div>
-      
-            </div>
-          </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <title>Fitness Dashboard</title>
+</head>
+<body>
+    <nav class="topnav">
+        <a href="#" class="active">Dashboard</a>
+        <a href="#">Calorie Intake</a>
+        <a href="#">To-Do List</a>
+        <a href="#">Share</a>
+    </nav>
+    <div class="dashboard">
+        <div class="section calorie-intake">
+            <h2>Calorie Intake</h2>
+            <input type="number" id="calorie-intake" placeholder="Enter calorie intake">
+            <button id="save-ci">Save</button>
         </div>
-      </section>
+        <div class="section to-do-list">
+            <h2>To-Do List</h2>
+            <input type="text" id="new-task" placeholder="Add task">
+            <button id="add-task">Add</button>
+            <ul id="tasks">
+            </ul>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

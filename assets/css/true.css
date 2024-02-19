@@ -55,3 +55,13 @@
       text-align: right;
     }
   }
+
+  .video {
+    padding-block: 0;
+    margin-block-end: -250px; 
+  }
+  
+  .card {
+    margin: 1em auto;
+  }
+  
